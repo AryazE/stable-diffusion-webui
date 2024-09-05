@@ -48,9 +48,7 @@ jobs:
             analysis-coverage: false
       - name: Start test server
         run: >
-          python -m coverage run
-          --data-file=.coverage.server
-          launch.py
+          python launch.py
           --skip-prepare-environment
           --skip-torch-cuda-test
           --test-server
